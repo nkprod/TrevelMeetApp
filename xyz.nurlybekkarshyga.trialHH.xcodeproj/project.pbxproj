@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47138CB41F9C5E78006C2AF7 /* FlightPassengersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47138CB31F9C5E78006C2AF7 /* FlightPassengersTableViewController.swift */; };
+		47138CB61F9C5EA0006C2AF7 /* FlightPassengersTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47138CB51F9C5EA0006C2AF7 /* FlightPassengersTableViewCell.swift */; };
+		47138CB81F9C5EBF006C2AF7 /* Passenger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47138CB71F9C5EBF006C2AF7 /* Passenger.swift */; };
+		47138CBA1F9C5EEC006C2AF7 /* PassengerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47138CB91F9C5EEC006C2AF7 /* PassengerProfileViewController.swift */; };
+		47138CBC1F9C5F2B006C2AF7 /* PersonalProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47138CBB1F9C5F2B006C2AF7 /* PersonalProfileViewController.swift */; };
 		7F088A001F9BF62D009DF65C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7F0889FF1F9BF4A9009DF65C /* GoogleService-Info.plist */; };
 		7FEE79CC1F9BA5AD0018491A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE79CB1F9BA5AD0018491A /* AppDelegate.swift */; };
 		7FEE79CE1F9BA5AD0018491A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FEE79CD1F9BA5AD0018491A /* ViewController.swift */; };
@@ -19,6 +24,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47138CB31F9C5E78006C2AF7 /* FlightPassengersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPassengersTableViewController.swift; sourceTree = "<group>"; };
+		47138CB51F9C5EA0006C2AF7 /* FlightPassengersTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPassengersTableViewCell.swift; sourceTree = "<group>"; };
+		47138CB71F9C5EBF006C2AF7 /* Passenger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Passenger.swift; sourceTree = "<group>"; };
+		47138CB91F9C5EEC006C2AF7 /* PassengerProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassengerProfileViewController.swift; sourceTree = "<group>"; };
+		47138CBB1F9C5F2B006C2AF7 /* PersonalProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalProfileViewController.swift; sourceTree = "<group>"; };
 		7F0889FF1F9BF4A9009DF65C /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7FEE79C81F9BA5AD0018491A /* xyz.nurlybekkarshyga.trialHH.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = xyz.nurlybekkarshyga.trialHH.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FEE79CB1F9BA5AD0018491A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,6 +90,11 @@
 				7FEE79CB1F9BA5AD0018491A /* AppDelegate.swift */,
 				7FEE79CD1F9BA5AD0018491A /* ViewController.swift */,
 				7FEE79CF1F9BA5AD0018491A /* Main.storyboard */,
+				47138CBB1F9C5F2B006C2AF7 /* PersonalProfileViewController.swift */,
+				47138CB31F9C5E78006C2AF7 /* FlightPassengersTableViewController.swift */,
+				47138CB51F9C5EA0006C2AF7 /* FlightPassengersTableViewCell.swift */,
+				47138CB91F9C5EEC006C2AF7 /* PassengerProfileViewController.swift */,
+				47138CB71F9C5EBF006C2AF7 /* Passenger.swift */,
 				7FEE79D21F9BA5AD0018491A /* Assets.xcassets */,
 				7FEE79D41F9BA5AD0018491A /* LaunchScreen.storyboard */,
 				7FEE79D71F9BA5AD0018491A /* Info.plist */,
@@ -190,13 +205,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-xyz.nurlybekkarshyga.trialHH-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		8FEBA9C17CDB7B2C24546971 /* [CP] Embed Pods Frameworks */ = {
@@ -205,9 +223,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-xyz.nurlybekkarshyga.trialHH/Pods-xyz.nurlybekkarshyga.trialHH-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -221,10 +246,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47138CB41F9C5E78006C2AF7 /* FlightPassengersTableViewController.swift in Sources */,
+				47138CB81F9C5EBF006C2AF7 /* Passenger.swift in Sources */,
 				7FEE79E21F9BA9520018491A /* LogInVeiwController.swift in Sources */,
 				7FEE79CE1F9BA5AD0018491A /* ViewController.swift in Sources */,
 				7FEE79E41F9BA9800018491A /* SignUpViewController.swift in Sources */,
+				47138CB61F9C5EA0006C2AF7 /* FlightPassengersTableViewCell.swift in Sources */,
 				7FEE79CC1F9BA5AD0018491A /* AppDelegate.swift in Sources */,
+				47138CBC1F9C5F2B006C2AF7 /* PersonalProfileViewController.swift in Sources */,
+				47138CBA1F9C5EEC006C2AF7 /* PassengerProfileViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
