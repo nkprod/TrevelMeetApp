@@ -13,7 +13,13 @@ class FlightPassengersTableViewController: UITableViewController {
     var flightPassengers : [Passenger] = [Passenger(name: "Bob", gender: "Male", age: 18, bio: "I'm a romantic", purposeOfTrip: "On a journey to find my partner", lookingFor: "I'm looking for love"), Passenger(name: "Ramon", gender: "Male", age: 33, bio: "bla", purposeOfTrip: "bla", lookingFor: "bla")]
     
     
+    var database = firebase.database()
     
+    var userId = firebase.auth().currentUser.uid;
+    return firebase.database().ref('/users/' + userId).once('value').then(function(snapshot) {
+    var username = (snapshot.val() && snapshot.val().username) || 'Anonymous';
+    // ...
+    });
     
     
     
